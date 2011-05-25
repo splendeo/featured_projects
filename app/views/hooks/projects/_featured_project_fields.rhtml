@@ -1,0 +1,10 @@
+
+<% content_for :header_tags do %>
+  <%= stylesheet_link_tag "featured_projects.css", :plugin => "featured_projects", :media => "screen" %>
+<% end %>
+
+<% if User.current.allowed_to?(:update_featured_project_flags, nil, :global => true) %>
+  <p><%= form.check_box :is_featured %></p>
+<% elsif project.is_featured? %>
+  <p><span class="icon icon-ribbon"><%= t('field_is_featured') %></span></p>
+<% end %>
