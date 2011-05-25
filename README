@@ -1,6 +1,8 @@
-== Sample plugin
+== Redmine/Chiliproject Featured Projects Plugin
 
-This is a sample plugin for Redmine
+This plugin allows the redmine/chiliproject administrator to mark any project he wants as "featured" (notice that this is an "admin" right, not a project administrator right).
+
+It also changes the redmine home page to show a "featured projects" box. This box replaces the default "Latest projects" box.
 
 == Installation
 
