@@ -14,3 +14,7 @@ It also changes the redmine home page to show a "featured projects" box. This bo
 3. Start Redmine
 
 Installed plugins are listed and can be configured from 'Admin -> Plugins' screen.
+
+== Credits
+
+Development of this plugin was financed by the Open Hardware Repository - www.ohwr.org
