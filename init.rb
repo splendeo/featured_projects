@@ -5,17 +5,12 @@ require 'dispatcher'
 Dispatcher.to_prepare :featured_projects do
 
   require_dependency 'featured_projects/hooks'
+
   require_dependency 'project'
+  Project.send(:include, FeaturedProjects::Patches::ProjectPatch)
+
   require_dependency 'welcome_controller'
-  # Guards against including the module multiple time (like in tests)
-  # and registering multiple callbacks
-  unless Project.included_modules.include? FeaturedProjects::Patches::ProjectPatch
-    Project.send(:include, FeaturedProjects::Patches::ProjectPatch)
-  end
-  
-  unless WelcomeController.included_modules.include? FeaturedProjects::Patches::WelcomeControllerPatch
-    WelcomeController.send(:include, FeaturedProjects::Patches::WelcomeControllerPatch)
-  end
+  WelcomeController.send(:include, FeaturedProjects::Patches::WelcomeControllerPatch)
 
 end
 
