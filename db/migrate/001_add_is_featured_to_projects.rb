@@ -3,7 +3,7 @@
 class AddIsFeaturedToProjects < ActiveRecord::Migration
 
   def self.up
-    add_column :projects, :is_featured, :boolean
+    add_column :projects, :is_featured, :boolean, :default => false, :null => false
   end
 
   def self.down
