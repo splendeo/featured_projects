@@ -10,7 +10,9 @@ Dispatcher.to_prepare :featured_projects do
   Project.send(:include, FeaturedProjects::Patches::ProjectPatch)
 
   require_dependency 'welcome_controller'
-  WelcomeController.send(:include, FeaturedProjects::Patches::WelcomeControllerPatch)
+  unless WelcomeController.included_modules.include? FeaturedProjects::Patches::WelcomeControllerPatch
+    WelcomeController.send(:include, FeaturedProjects::Patches::WelcomeControllerPatch)
+  end
 
 end
 

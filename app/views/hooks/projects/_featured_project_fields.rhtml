@@ -1,6 +1,6 @@
 
 <% content_for :header_tags do %>
-  <%= stylesheet_link_tag "featured_projects.css", :plugin => "featured_projects", :media => "screen" %>
+  <%= stylesheet_link_tag "featured_projects.css", :plugin => "featured_projects" %>
 <% end %>
 
 <% if User.current.allowed_to?(:update_featured_project_flags, nil, :global => true) %>
