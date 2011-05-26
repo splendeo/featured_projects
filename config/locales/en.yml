@@ -2,4 +2,5 @@
 
 en:
   field_is_featured: Featured Project
-  label_project_featured: Featured Projects
+  label_featured_projects: Featured Projects
+  label_project_featured: This project is featured

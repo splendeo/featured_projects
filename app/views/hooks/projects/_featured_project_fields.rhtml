@@ -6,5 +6,5 @@
 <% if User.current.allowed_to?(:update_featured_project_flags, nil, :global => true) %>
   <p><%= form.check_box :is_featured %></p>
 <% elsif project.is_featured? %>
-  <p><span class="icon icon-ribbon"><%= t('field_is_featured') %></span></p>
+  <p><span class="icon icon-featured"><%= t('label_project_featured') %></span></p>
 <% end %>
