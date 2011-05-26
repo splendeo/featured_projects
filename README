@@ -4,6 +4,10 @@ This plugin allows the redmine/chiliproject administrator to mark any project he
 
 It also changes the redmine home page to show a "featured projects" box. This box replaces the default "Latest projects" box.
 
+Finally, it adds two named scopes to Project: Project.featured and Project.not_featured
+
+This plugin can be used in consonance with our Redmine Project Filtering plugin ( https://github.com/splendeo/redmine_project_filtering )
+
 == Installation
 
 1. Copy the plugin directory into the vendor/plugins directory
