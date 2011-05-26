@@ -16,7 +16,7 @@ module FeaturedProjects
 
           named_scope :featured, {:conditions => {:is_featured => true}}
         
-          named_scope :not_featured, { :conditions => ["#{Project.table_name}.is_featured <> :true", :true => true] }
+          named_scope :not_featured, { :conditions => ["#{Project.table_name}.is_featured <> :true", {:true => true}] }
         end
 
       end
