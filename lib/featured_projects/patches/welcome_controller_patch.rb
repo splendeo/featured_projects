@@ -20,7 +20,7 @@ module FeaturedProjects
       
         def index_with_featured_projects
           index_without_featured_projects
-          @projects = Project.visible.featured.all(:sort => 'name ASC')
+          @projects = Project.visible.featured.all(:order => 'name ASC')
         end
       
       end
