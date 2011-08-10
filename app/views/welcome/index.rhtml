@@ -2,9 +2,10 @@
   <% if @projects.any? %>
     <h2 id="projects"><a href="<%= projects_path %>"><%= l(:label_project_plural) %></a></h2>
 
-    <div class="box">
-      <h3 class="featured-projects"><%=l(:label_featured_projects)%></h3>
-      <ul>
+
+    <h3 id="featured-projects-title"><%=l(:label_featured_projects)%></h3>
+    <div class="box" id="featured-projects-box">
+      <ul id="featured-projects-list">
       <% for project in @projects %>
         <% @project = project %>
         <li>
