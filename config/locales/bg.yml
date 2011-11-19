@@ -1,0 +1,5 @@
+# Bulgarian strings go here
+bg:
+  field_is_featured: Избран проект
+  label_featured_projects: Избрани проекти
+  label_project_featured: Този проект е избран
