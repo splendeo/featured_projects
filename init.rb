@@ -18,7 +18,7 @@ end
 
 Redmine::Plugin.register :featured_projects do
   name 'Featured Projects'
-  author 'Enrique García'
+  author 'Enrique García, Francisco de Juan'
   description 'Redmine featured projects'
-  version '0.0.1'
+  version '0.0.2'
 end

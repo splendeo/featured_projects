@@ -10,7 +10,6 @@
         <% @project = project %>
         <li>
         <h4><%= link_to_project project %></h4>
-        <div class="date">(<%= format_time(project.created_on) %>)</div>
         <div class="text">
           <%= textilizable project.short_description, :project => project %>
         </div>
